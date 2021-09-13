@@ -50,7 +50,7 @@ io.on("connect",socket => {
 	io.to(room).emit("message", { user: name, text: currentMessage });   
   })
 
-
+ 
 })
 
 server.listen(process.env.PORT || 5000, ()=> console.log("server running")) 
